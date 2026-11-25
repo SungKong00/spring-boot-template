@@ -1,0 +1,23 @@
+{
+  "captureFrames": 262,
+  "captureMedianIntervalMs": 34,
+  "gapP95ms": 60.9,
+  "outputFrames": 263,
+  "distinctSourceFramesSelected": 236,
+  "outputFps": 25,
+  "durationSeconds": 10.52,
+  "gifBytes": 1863194,
+  "mp4Bytes": 488368,
+  "cases": [
+    {
+      "request": "Package 4821 is ready for pickup.",
+      "status": "200",
+      "headerMatchesBody": null
+    },
+    {
+      "request": " ",
+      "status": "400",
+      "headerMatchesBody": true
+    }
+  ]
+}

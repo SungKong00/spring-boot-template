@@ -1,7 +1,5 @@
 # Spring Boot Template
 
-> 템플릿의 구조와 실행 화면을 보여 주는 문서와 시연입니다. 아래 실행 절차는 템플릿 소스가 있는 작업 사본을 기준으로 합니다.
-
 ## 개요
 
 새 Spring REST 서버에서 프로젝트 이름과 Java 패키지를 정하면, **DB나 배포 계정을 준비하기 전에 첫 요청과 오류 응답부터 확인할 수 있는 템플릿**이다. 서비스의 도메인 모델은 미리 정하지 않고, 초기화 방법·응답 형식·실행 프로필·검증 도구를 재사용할 수 있게 만들었다.
@@ -45,7 +43,7 @@
 
 ![실제 로컬 Swagger에서 정상 메시지를 보내 200을 확인한 후 공백 입력을 보내 400과 요청 ID를 확인하는 연속 시연](docs/portfolio-readme/assets/swagger-demo.gif)
 
-택배 조회 서비스를 시작한다고 가정하고 Swagger에서 수령 안내 문구를 보낸다. 같은 입력을 공백으로 바꿔 보내면 서버가 어느 항목에서 오류가 났는지 알려준다.
+택배 수령 안내 API를 붙이기 전, 개발자가 Swagger의 테스트 경로에 안내 문구를 보내 응답 형식을 확인한다. 같은 필드를 공백으로 보내면 400 응답에 잘못된 항목과 요청 ID가 표시된다.
 
 ### HTTP 계약에서 확인할 내용
 
@@ -55,7 +53,7 @@
 
 `/smoke-checks`는 템플릿의 HTTP 계약을 확인하는 예제다. 제품 데이터를 저장하지 않고 운영 프로필에는 등록되지 않는다.
 
-[정상 응답 화면](docs/portfolio-readme/assets/swagger-success.png) · [입력 오류 화면](docs/portfolio-readme/assets/swagger-validation.png) · [실제 HTTP 결과](docs/portfolio-readme/evidence/http.txt)
+[MP4로 보기](docs/portfolio-readme/assets/swagger-demo.mp4) · [정상 응답 화면](docs/portfolio-readme/assets/swagger-success.png) · [입력 오류 화면](docs/portfolio-readme/assets/swagger-validation.png) · [실제 HTTP 결과](docs/portfolio-readme/evidence/http.txt)
 
 ### 개발자 · MySQL 통합 테스트로 쓰기 경계 확인하기
 
@@ -106,7 +104,7 @@ GitHub 템플릿을 복제해도 Java 패키지, 프로젝트명, JAR 산출물 
 
 새 프로젝트가 첫 요청을 처리하는지 보려고 매번 Docker와 스키마를 먼저 준비하고 싶지는 않았다. 그렇다고 DB 동작을 H2만으로 대체하면 MySQL의 설정과 엔진 동작을 확인할 수 없다. 기본 실행 프로필에서는 데이터소스 자동 설정을 끈다. DB를 쓰는 프로필은 별도로 켜고, 제품 스키마나 마이그레이션 방식은 그 서비스를 만들 때 정한다.
 
-트랜잭션은 격리한 Compose MySQL과 테스트용 엔티티에서만 검증한다. 애플리케이션 서비스의 공개 메서드 하나가 두 저장소 쓰기를 묶어, 두 건을 함께 커밋하거나 두 번째 동작 실패 때 처음부터 롤백한다. 검증마다 임시 스키마와 포트를 써서 다른 작업의 데이터와 섞이지 않게 했다. 이전 구현 검증 기록에서 확인한 MySQL 통합 테스트는 3건이며, 기본 빌드·Swagger 확인에는 Docker를 요구하지 않는다.
+Compose MySQL을 사용하는 통합 테스트는 공개 서비스 메서드 하나에서 두 저장소에 쓰기를 수행합니다. 성공하면 두 건이 함께 남고, 두 번째 쓰기가 실패하면 첫 번째 쓰기도 롤백됩니다. 기본 빌드와 Swagger 실행에는 Docker가 필요하지 않습니다.
 
 ### 요청을 찾을 수 있게 하되, 입력값을 로그에 남기지 않기
 
