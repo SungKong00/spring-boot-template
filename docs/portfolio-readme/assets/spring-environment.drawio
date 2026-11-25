@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="spring-environment" name="Spring Boot Template | 실행 환경 두 갈래" alt="Spring Boot Template | 실행 환경 두 갈래 · 루프백의 실제 JAR과 별도 Docker/MySQL 통합검사를 분리">
+    <mxGraphModel page="1" pageScale="1" pageWidth="1330" pageHeight="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="canvas" parent="1" vertex="1" value="" style="fillColor=#FFFFFF;strokeColor=none;movable=0;resizable=0;editable=0;selectable=0;html=0;">
+          <mxGeometry x="0" y="0" width="1330" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" vertex="1" value="Spring Boot Template | 실행 환경 두 갈래" style="text;html=0;strokeColor=none;fillColor=none;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontColor=#15283D;fontSize=35;fontStyle=1;fontFamily=Arial;">
+          <mxGeometry x="43" y="24" width="1245" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" vertex="1" value="루프백의 실제 JAR과 별도 Docker/MySQL 통합검사를 분리" style="text;html=0;strokeColor=none;fillColor=none;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontColor=#485D72;fontSize=21;fontStyle=0;fontFamily=Arial;">
+          <mxGeometry x="45" y="74" width="1240" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="local" parent="1" vertex="1" value="01  로컬 실행 · 검토에서 확인" style="rounded=1;arcSize=7;html=0;whiteSpace=wrap;fillColor=#F8FBFD;fillOpacity=85;strokeColor=#C8DAE5;dashed=1;dashPattern=7 5;strokeWidth=1.2;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontStyle=1;fontColor=#435D72;fontFamily=Arial;">
+          <mxGeometry x="62" y="131" width="1206" height="171" as="geometry" />
+        </mxCell>
+        <mxCell id="integration" parent="1" vertex="1" value="02  별도 통합검사 · 저장소 구성" style="rounded=1;arcSize=7;html=0;whiteSpace=wrap;fillColor=#F8FBFD;fillOpacity=85;strokeColor=#C8DAE5;dashed=1;dashPattern=7 5;strokeWidth=1.2;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontStyle=1;fontColor=#435D72;fontFamily=Arial;">
+          <mxGeometry x="62" y="330" width="1206" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" vertex="1" value="" style="rounded=0;fillColor=none;strokeColor=none;whiteSpace=wrap;html=0;">
+          <mxGeometry x="119" y="196" width="306" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="client_tile" parent="client" vertex="1" value="" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#A7BBD8;strokeWidth=1.2;html=0;">
+          <mxGeometry x="2" y="16" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="client_icon" parent="client" vertex="1" value="" style="shape=image;imageAspect=1;image=data:image/svg+xml,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9IiMyMTRGODciCiAgc3Ryb2tlLXdpZHRoPSIyIgogIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICBzdHJva2UtbGluZWpvaW49InJvdW5kIgo+CiAgPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE0IiB4PSIyIiB5PSIzIiByeD0iMiIgLz4KICA8bGluZSB4MT0iOCIgeDI9IjE2IiB5MT0iMjEiIHkyPSIyMSIgLz4KICA8bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjE3IiB5Mj0iMjEiIC8+Cjwvc3ZnPgo=;">
+          <mxGeometry x="10" y="24" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="client_label" parent="client" vertex="1" value="개발자 HTTP 클라이언트" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=21;fontColor=#214F87;fontStyle=1;fontFamily=Arial;">
+          <mxGeometry x="49" y="9" width="252" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="client_desc" parent="client" vertex="1" value="Swagger 또는 curl" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=17;fontColor=#425E70;fontStyle=0;fontFamily=Arial;">
+          <mxGeometry x="49" y="37" width="252" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="boot" parent="1" vertex="1" value="" style="rounded=0;fillColor=none;strokeColor=none;whiteSpace=wrap;html=0;">
+          <mxGeometry x="782" y="196" width="376" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="boot_tile" parent="boot" vertex="1" value="" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#9FBEB1;strokeWidth=1.2;html=0;">
+          <mxGeometry x="2" y="16" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="boot_icon" parent="boot" vertex="1" value="" style="shape=image;imageAspect=1;image=data:image/svg+xml,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9IiMxMjYxNEYiCiAgc3Ryb2tlLXdpZHRoPSIyIgogIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICBzdHJva2UtbGluZWpvaW49InJvdW5kIgo+CiAgPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjgiIHg9IjIiIHk9IjIiIHJ4PSIyIiByeT0iMiIgLz4KICA8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iOCIgeD0iMiIgeT0iMTQiIHJ4PSIyIiByeT0iMiIgLz4KICA8bGluZSB4MT0iNiIgeDI9IjYuMDEiIHkxPSI2IiB5Mj0iNiIgLz4KICA8bGluZSB4MT0iNiIgeDI9IjYuMDEiIHkxPSIxOCIgeTI9IjE4IiAvPgo8L3N2Zz4K;">
+          <mxGeometry x="10" y="24" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="boot_label" parent="boot" vertex="1" value="Spring Boot JAR" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=21;fontColor=#12614F;fontStyle=1;fontFamily=Arial;">
+          <mxGeometry x="49" y="9" width="322" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="boot_desc" parent="boot" vertex="1" value="local · 127.0.0.1 · DB 없음" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=17;fontColor=#425E70;fontStyle=0;fontFamily=Arial;">
+          <mxGeometry x="49" y="37" width="322" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="suite" parent="1" vertex="1" value="" style="rounded=0;fillColor=none;strokeColor=none;whiteSpace=wrap;html=0;">
+          <mxGeometry x="119" y="396" width="306" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="suite_tile" parent="suite" vertex="1" value="" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#ABB7C1;strokeWidth=1.2;html=0;">
+          <mxGeometry x="2" y="16" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="suite_icon" parent="suite" vertex="1" value="" style="shape=image;imageAspect=1;image=data:image/svg+xml,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9IiM0MzU5NjgiCiAgc3Ryb2tlLXdpZHRoPSIyIgogIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICBzdHJva2UtbGluZWpvaW49InJvdW5kIgo+CiAgPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjE0IiB4PSIyIiB5PSIzIiByeD0iMiIgLz4KICA8bGluZSB4MT0iOCIgeDI9IjE2IiB5MT0iMjEiIHkyPSIyMSIgLz4KICA8bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjE3IiB5Mj0iMjEiIC8+Cjwvc3ZnPgo=;">
+          <mxGeometry x="10" y="24" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="suite_label" parent="suite" vertex="1" value="통합검사 스크립트" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=21;fontColor=#435968;fontStyle=1;fontFamily=Arial;">
+          <mxGeometry x="49" y="9" width="252" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="suite_desc" parent="suite" vertex="1" value="테스트 프로필 · 트랜잭션 검사" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=17;fontColor=#425E70;fontStyle=0;fontFamily=Arial;">
+          <mxGeometry x="49" y="37" width="252" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql" parent="1" vertex="1" value="" style="rounded=0;fillColor=none;strokeColor=none;whiteSpace=wrap;html=0;">
+          <mxGeometry x="782" y="396" width="376" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_tile" parent="mysql" vertex="1" value="" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#B9ADD4;strokeWidth=1.2;html=0;">
+          <mxGeometry x="2" y="16" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_icon" parent="mysql" vertex="1" value="" style="shape=image;imageAspect=1;image=data:image/svg+xml,PHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9IiM1NDNFODMiCiAgc3Ryb2tlLXdpZHRoPSIyIgogIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICBzdHJva2UtbGluZWpvaW49InJvdW5kIgo+CiAgPGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjkiIHJ5PSIzIiAvPgogIDxwYXRoIGQ9Ik0zIDVWMTlBOSAzIDAgMCAwIDIxIDE5VjUiIC8+CiAgPHBhdGggZD0iTTMgMTJBOSAzIDAgMCAwIDIxIDEyIiAvPgo8L3N2Zz4K;">
+          <mxGeometry x="10" y="24" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_label" parent="mysql" vertex="1" value="Docker Compose · MySQL" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=21;fontColor=#543E83;fontStyle=1;fontFamily=Arial;">
+          <mxGeometry x="49" y="9" width="322" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql_desc" parent="mysql" vertex="1" value="통합검사용 DB · 운영 DB 아님" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;spacing=0;fontSize=17;fontColor=#425E70;fontStyle=0;fontFamily=Arial;">
+          <mxGeometry x="49" y="37" width="322" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" value="로컬 HTTP 요청" edge="1" parent="1" source="client" target="boot" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#415C70;strokeWidth=2.2;fontColor=#24435A;fontSize=16;labelBackgroundColor=#FFFFFF;labelPadding=2;fontFamily=Arial;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" value="별도로 시작하는 테스트 DB" edge="1" parent="1" source="suite" target="mysql" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=blockThin;endFill=1;strokeColor=#415C70;strokeWidth=2.2;fontColor=#24435A;fontSize=16;labelBackgroundColor=#FFFFFF;labelPadding=2;fontFamily=Arial;dashed=1;dashPattern=6 4;strokeColor=#75818D;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" parent="1" vertex="1" value="위: 실제 로컬 JAR·HTTP 확인 · 아래: 저장소 설정 기준, 이번에 미재실행 · GitHub Actions/AWS 미검증" style="text;html=0;strokeColor=none;fillColor=none;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=0;fontColor=#43586D;fontSize=17;fontStyle=0;fontFamily=Arial;">
+          <mxGeometry x="45" y="538" width="1240" height="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

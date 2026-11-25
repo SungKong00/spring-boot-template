@@ -1,0 +1,19 @@
+GET /actuator/health
+HTTP 200
+X-Request-Id: readme-probe
+{"status":"UP"}
+
+POST /smoke-checks {"message":"quick-start"}
+HTTP 200
+X-Request-Id: readme-probe
+{"message":"quick-start"}
+
+POST /smoke-checks {"message":" "}
+HTTP 400
+X-Request-Id: readme-probe
+{"code":"VALIDATION_FAILED","message":"요청을 확인해 주세요.","errors":[{"field":"message","reason":"mustNotBeBlank"}],"requestId":"readme-probe"}
+
+GET /v3/api-docs
+HTTP 200 · OpenAPI 3.1.0 · POST /smoke-checks 확인
+
+Listener: 127.0.0.1:65049 (random local port)

@@ -1,0 +1,6 @@
+Clean-room source: 3132cdf4886b4002a62496e6a7011b71d7d638f3 (git archive)
+Initialized service: parcel-service (io.example.parcel)
+Strict verification after normal Java edit: exit 2
+Initialization verification failed: Initialized target fingerprint does not match the marker.
+
+Runtime readiness verified for parcel-service (io.example.parcel).

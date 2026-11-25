@@ -1,0 +1,15 @@
+Parcel Service · 새 프로젝트 시작
+
+$ python3 scripts/init-template.py \
+    --project-name="Parcel Service" \
+    --artifact-name=parcel-service \
+    --base-package=io.example.parcel \
+    --description="Parcel pickup and tracking API"
+Initialization plan verified: 23 changed, 32 added, 32
+deleted file(s). Initialization completed.
+
+$ python3 scripts/verify-template-init.py
+Initialization verified for parcel-service (io.example.parcel).
+
+프로젝트: parcel-service
+Java 패키지: io.example.parcel
